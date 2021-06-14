@@ -21,7 +21,7 @@ So the variables X & Y can be anything and be stored in a database.
 
 The flow process of this services, it is easy to understand with images.
 
-<img src="https://drive.google.com/file/d/1xRm920ycLWa2B9Vezrl8RG9sDGmENqXD/view?usp=sharing">
+<img src="https://github.com/sigitisme/simplecheckout/blob/main/img/flow.jpg">
 
 
 
@@ -120,6 +120,4 @@ curl --location --request POST 'http://localhost:8080/query' \
 
 ### Postman Collection
 
-```
-https://www.getpostman.com/collections/2a4c44a949af973c9255
-```
+<a href="https://www.getpostman.com/collections/2a4c44a949af973c9255">Get Postman Collection Here!</a>
