@@ -120,6 +120,4 @@ curl --location --request POST 'http://localhost:8080/query' \
 
 ### Postman Collection
 
-```
-[Posmant Collection](https://www.getpostman.com/collections/2a4c44a949af973c9255)
-```
+<a href="https://www.getpostman.com/collections/2a4c44a949af973c9255">Get Postman Collection Here!</a>
