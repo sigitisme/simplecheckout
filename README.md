@@ -68,7 +68,7 @@ curl --location --request POST 'http://localhost:8080/query' \
 --data-raw '{"query":"mutation AddProduct4{\n  createProduct(input:{sku:\"A304SD\", name:\"Alexa Speaker\", price:109.50, quantity:10}){\n    ID\n    sku\n    name\n  }\n}","variables":{}}'
 ```
 
-### Add Promo #1
+### Add Promo #1 - Buy 1 Get 1 Scheme
 
 ```
 curl --location --request POST 'http://localhost:8080/query' \
@@ -76,7 +76,7 @@ curl --location --request POST 'http://localhost:8080/query' \
 --data-raw '{"query":"mutation AddPromo1 {\n  createPromo(input:{sku:\"43N23P\", scheme:\"Buy1Get1\",freebiesku:\"234234\",minqty:0,payonly:0,percentageoff:0}){\n    ID\n    sku\n    scheme\n    freebiesku\n  }\n}","variables":{}}'
 ```
 
-### Add Promo #2
+### Add Promo #2 - Buy X Pay Y
 
 ```
 curl --location --request POST 'http://localhost:8080/query' \
@@ -84,7 +84,7 @@ curl --location --request POST 'http://localhost:8080/query' \
 --data-raw '{"query":"mutation AddPromo2 {\n  createPromo(input:{sku:\"43N23P\", scheme:\"BuyXPayY\",freebiesku:\"\",minqty:3,payonly:2,percentageoff:0}){\n    ID\n    sku\n    scheme\n    minqty\n  payonly\n  }\n}","variables":{}}'
 ```
 
-### Add Promo #3
+### Add Promo #3 - Buy Min X Off Y%
 
 ```
 curl --location --request POST 'http://localhost:8080/query' \
