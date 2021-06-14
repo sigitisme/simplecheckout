@@ -1,0 +1,64 @@
+input Cart{
+  contents: [Content!]!
+}
+
+input Content {
+  sku: String!
+  name: String!
+  quantity: Int!
+}
+
+input NewProduct {
+  sku: String!
+  name: String!
+  price: Float!
+  quantity: Int!
+}
+
+input NewPromo {
+  sku: String!
+	scheme: String!
+	freebiesku: String
+	minqty: Int
+	payonly: Int
+	percentageoff: Int
+}
+
+type Product {
+  ID: String!
+  sku: String!
+  name: String!
+  price: Float!
+  quantity: Int!
+}
+
+type Promo {
+  ID: String!
+  sku: String!
+	scheme:  String!
+	freebiesku: String!
+	minqty:       Int!
+	payonly:      Int!
+	percentageoff: Int!
+}
+
+type Query {
+  product(id: String!): Product!
+  products: [Product!]!
+  promo(id: String!): Promo!
+  promos: [Promo!]!
+  checkout(input: Cart): Response!
+}
+
+type ResponseCreated {
+  ID: String!
+}
+
+type Mutation {
+  createProduct(input: NewProduct): Product!
+  createPromo(input: NewPromo): Promo!
+}
+
+type Response {
+  total: Float!
+}
